@@ -2431,3 +2431,59 @@ details-disclosure > details {
 .social-sharing .icon-twitter {
   color: #00aced;
 }
+
+.moo-footer {
+  background-color: #E8EFFA;
+  height: 60px;
+  margin-top: 100px;
+}
+
+.moo-footer a {
+  font-family: var(--font-heading-family);
+  font-size: 24px;
+  margin-left: 40px;
+  position: relative;
+  top: -20%;
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+  .moo-footer a {
+    margin-left: 100px;
+    font-size: 28px;
+    top: -25px;
+  }
+}
+
+#toTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10000;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+#toTop:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #fff;
+  transition: 0.3s;
+
+}
+
+#toTop:hover:before {
+  border-bottom: 40px solid #656363;
+  cursor: pointer;
+}
