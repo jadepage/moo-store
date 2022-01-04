@@ -61,6 +61,12 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "moo-footer": {
+        "type": "moo-footer",
+        "settings": {
+          "footer_menu": "main-menu"
+        }
       }
     },
     "content_for_index": [
